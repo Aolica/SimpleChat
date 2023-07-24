@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
-    origin: "https://aolica.github.io/SimpleChat",
+    origin: "https://aolica.github.io",
     optionsSuccessStatus: 200
 };
 
