@@ -1,0 +1,17 @@
+{
+  "name": "nodechat",
+  "version": "1.0.0",
+  "description": "backend server of chat application",
+  "main": "App.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vendia/serverless-express": "^4.10.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
+}
