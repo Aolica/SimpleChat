@@ -11,7 +11,7 @@ if(process.env.NODE_ENV === 'develop') {
     dbset = new sqlite3.Database("/mnt/db/chat.db");
 }
 const db = dbset;
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
@@ -29,8 +29,8 @@ if(process.env.NODE_ENV === 'develop') {
 }
 const getLogSQL = "select name,message from (select * from chats order by created_at desc limit 20) as a order by created_at asc";
 
-app.get("/", (req, res, next) => {
-    console.log("GET / request arrived");
+app.get("/api/ping", (req, res, next) => {
+    console.log("GET /api/ping request arrived");
     res.send("Hello World!");
 });
 

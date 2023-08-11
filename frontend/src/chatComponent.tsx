@@ -30,7 +30,7 @@ export function ChatComponent() {
     <div onKeyDown={handlekeydown}>
       <div className='chat-view'>
       {messages.map((message :any, index) => {
-        return (<div key={index}>{message.name} {message.message}</div>);
+        return (<div key={index}>{message.name} : {message.message}</div>);
       })}
       </div>
       <div className='chat-input'>
