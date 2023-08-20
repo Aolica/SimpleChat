@@ -1,7 +1,5 @@
-import { resolve } from "path";
-
 function APICall(path :string, req :object,callback :Function) {
-  const url = "https://45itgrh7r9.execute-api.ap-northeast-1.amazonaws.com" || process.env.REACT_APP_API_URL;
+  const url = process.env.REACT_APP_BACKEND_API_URL;
   const request = Object.assign({ 
     headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': `${url}`},
     mode: "cors" as RequestMode
